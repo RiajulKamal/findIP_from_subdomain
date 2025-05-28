@@ -22,7 +22,6 @@ Resolve a list of sub-domains to their first IPv4 address and save the results t
 
 # 🚀 Usage
 
-```bash
 ## 1. Save the script
 ###
     curl -O https://raw.githubusercontent.com/RiajulKamal/findIP_from_subdomain/refs/heads/main/findIP.sh
