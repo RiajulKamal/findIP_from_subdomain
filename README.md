@@ -1,4 +1,4 @@
-# resolve_subdomains.sh
+# findIP.sh
 
 Resolve a list of sub-domains to their first IPv4 address and save the results to `iplist.txt`.
 
@@ -24,10 +24,10 @@ Resolve a list of sub-domains to their first IPv4 address and save the results t
 
 ```bash
 # 1. Save the script
-curl -O https://example.com/resolve_subdomains.sh  # or copy-paste
+curl -O https://example.com/findIP.sh  # or copy-paste the contents
 
 # 2. Make it executable
-chmod +x resolve_subdomains.sh
+chmod +x findIP.sh
 
 # 3. Run it with a file that lists your sub-domains
-./resolve_subdomains.sh subdomains.txt
+./findIP.sh subdomains.txt
