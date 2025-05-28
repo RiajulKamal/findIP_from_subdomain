@@ -1,1 +1,33 @@
-# findIP_from_subdomain
+# resolve_subdomains.sh
+
+Resolve a list of sub-domains to their first IPv4 address and save the results to `iplist.txt`.
+
+---
+
+## 📑 What this script does
+1. **Validates input** – Requires a text file containing one sub-domain (or URL) per line.  
+2. **Cleans the domain** – Strips any leading `http://` or `https://`.  
+3. **Performs DNS look-ups** – Uses `dig` to grab the first A record (IPv4).  
+4. **Stores the output** – Writes every successfully-resolved IP to `iplist.txt`.
+
+---
+
+## 🛠 Prerequisites
+| Tool | Why you need it | Install (Linux) |
+|------|-----------------|-----------------|
+| `bash` | Script runtime | _Usually pre-installed_ |
+| `dig`  | DNS queries    | `sudo apt install dnsutils` <br>or<br> `sudo dnf install bind-utils` |
+
+---
+
+## 🚀 Usage
+
+```bash
+# 1. Save the script
+curl -O https://example.com/resolve_subdomains.sh  # or copy-paste
+
+# 2. Make it executable
+chmod +x resolve_subdomains.sh
+
+# 3. Run it with a file that lists your sub-domains
+./resolve_subdomains.sh subdomains.txt
