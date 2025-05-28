@@ -20,14 +20,17 @@ Resolve a list of sub-domains to their first IPv4 address and save the results t
 
 ---
 
-## 🚀 Usage
+# 🚀 Usage
 
 ```bash
-# 1. Save the script
-curl -O https://raw.githubusercontent.com/RiajulKamal/findIP_from_subdomain/refs/heads/main/findIP.sh
+## 1. Save the script
+###
+    curl -O https://raw.githubusercontent.com/RiajulKamal/findIP_from_subdomain/refs/heads/main/findIP.sh
 
-# 2. Make it executable
-chmod +x findIP.sh
+## 2. Make it executable
+###
+    chmod +x findIP.sh
 
-# 3. Run it with a file that lists your sub-domains
-./findIP.sh YourSubdomainList.txt
+## 3. Run it with a file that lists your sub-domains
+###
+    ./findIP.sh YourSubdomainList.txt
